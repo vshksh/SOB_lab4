@@ -2,7 +2,7 @@ package silnia;
 
 public class TKrzywonosStrong {
 	
-	public static void calculateStrong(double value){
+	public static double calculateStrong(double value){
 		double result = 1;
 		//System.out.print("silnia dla wartosci " + value);
 		long startTime = System.nanoTime();

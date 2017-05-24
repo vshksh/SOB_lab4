@@ -6,19 +6,23 @@
 
 package silnia;
 
+import java.math.BigInteger;
+
 /**
  *
  * @author Jeremiasz
  */
 public class SilniaJeremiaszCzaja
 {
-    public static int silnia(int n)
+    public static BigInteger silnia(int n)
     {
-        int value = 1;
+        
+        
+        BigInteger value = new BigInteger("1");
         
         for (int i = 1; i < n; i++)
         {
-            value = value + value*i;
+            value = value.add( value.multiply(new BigInteger(""+i)));
         }
         return value;
     }

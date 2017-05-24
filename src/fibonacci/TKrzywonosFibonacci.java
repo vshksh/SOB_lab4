@@ -2,7 +2,7 @@ package fibonacci;
 
 public class TKrzywonosFibonacci {
 	
-	  private static int fibonacci(int number) {
+	  public static int fibonacci(int number) {
 			if ((number == 0) || (number == 1))  return number;
 			else return fibonacci(number - 1) + fibonacci(number - 2);
 	  }
