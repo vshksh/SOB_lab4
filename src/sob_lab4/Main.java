@@ -12,29 +12,33 @@ public class Main {
 
                 public static void main(String[] args)
                 {
-                            System.out.println("Wyniki obliczeń dla 8. wyrazu ciągu Fibonacciego:");
-                            testFibonacci(8);
-                            System.out.println("");
-                            
-                           System.out.println("Wyniki obliczeń dla 50. wyrazu ciągu Fibonacciego:");
-                            testFibonacci(50);
-                            System.out.println("");
-                            
-                            System.out.println("Wyniki obliczeń dla -2. wyrazu ciągu Fibonacciego:");
-                            testFibonacci(-2);
-                            System.out.println("");
-                            
-                            System.out.println("Wyniki obliczeń dla silni liczby 5:");
-                            testSilnia(5);
-                            System.out.println("");
-                            
-                            System.out.println("Wyniki obliczeń dla silni liczby 60:");
-                            testSilnia(60);
-                            System.out.println("");
-                            
-                            System.out.println("Wyniki obliczeń dla silni liczby -3:");
-                            testSilnia(-3);
-                            System.out.println("");
+                        System.out.println("Wyniki obliczeń dla 8. wyrazu ciągu Fibonacciego:");
+                        testFibonacci(8);
+                        System.out.println("");
+
+                        System.out.println("Wyniki obliczeń dla 45. wyrazu ciągu Fibonacciego:");
+                        testFibonacci(45);
+                        System.out.println("");
+
+                        System.out.println("Wyniki obliczeń dla 50. wyrazu ciągu Fibonacciego:");
+                        testFibonacci(50);
+                        System.out.println("");
+
+                        System.out.println("Wyniki obliczeń dla -2. wyrazu ciągu Fibonacciego:");
+                        testFibonacci(-2);
+                        System.out.println("");
+
+                        System.out.println("Wyniki obliczeń dla silni liczby 5:");
+                        testSilnia(5);
+                        System.out.println("");
+
+                        System.out.println("Wyniki obliczeń dla silni liczby 60:");
+                        testSilnia(60);
+                        System.out.println("");
+
+                        System.out.println("Wyniki obliczeń dla silni liczby -3:");
+                        testSilnia(-3);
+                        System.out.println("");
 
 
                 }
@@ -73,35 +77,35 @@ public class Main {
                         exceptionC = true;
                     }
 
-                   if (!exceptionA && !exceptionB && !exceptionC)
-                  {
-                      if(resultA.equals(resultB))
-                      {
-                            System.out.println("Wynik po głosowaniu to " + resultA.toString());
-                      }
-                      else
-                      {
-                            if(resultB.equals(resultC))
-                           {
-                                 System.out.println("Wynik po głosowaniu to " + resultB.toString());
-                           }
-                            else
+                    if (!exceptionA && !exceptionB && !exceptionC)
+                    {
+                       if(resultA.equals(resultB))
+                       {
+                             System.out.println("Wynik po głosowaniu to " + resultA.toString());
+                       }
+                       else
+                       {
+                             if(resultB.equals(resultC))
                             {
-                                if(resultA.equals(resultC))
-                                {
-                                      System.out.println("Wynik po głosowaniu to " + resultA.toString());
-                                }
-                                else
-                                {
-                                    System.out.println("Żadna opcja nie zdobyła wystarczającej ilości głosów. ");
-                                }
+                                  System.out.println("Wynik po głosowaniu to " + resultB.toString());
                             }
-                      }
-                  }
-                   else
-                   {
-                       System.out.println("Pojawiły się błędy, nie można okreslić wyniku.");
-                   }
+                             else
+                             {
+                                 if(resultA.equals(resultC))
+                                 {
+                                       System.out.println("Wynik po głosowaniu to " + resultA.toString());
+                                 }
+                                 else
+                                 {
+                                     System.out.println("Żadna opcja nie zdobyła wystarczającej ilości głosów. ");
+                                 }
+                             }
+                       }
+                    }
+                    else
+                    {
+                        System.out.println("Pojawiły się błędy, nie można okreslić wyniku.");
+                    }
                     
                     
          }
