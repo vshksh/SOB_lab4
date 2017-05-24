@@ -13,6 +13,9 @@ public class Main {
                 public static void main(String[] args)
                 {
                             testFibonacci(5);
+                            
+                            testSilnia(10000);
+
                 }
                 
          private static void testFibonacci(int n)
@@ -99,15 +102,15 @@ public class Main {
              
                     try
                     {
-                        resultA = new BigInteger(SilniaPiotrMakowiec.ObliczRekurencyjnie(new Long(n))+"");
-                        System.out.println("Metoda SilniaPiotrMakowiec.ObliczRekurencyjnie() zwróciła wynik " + resultA.toString() );
+                        resultA = new BigInteger(SilniaPiotrMakowiec.ObliczIteracyjnie(new Long(n))+"");
+                        System.out.println("Metoda SilniaPiotrMakowiec.ObliczIteracyjnie() zwróciła wynik " + resultA.toString() );
                     } catch (Exception ex) {
-                         System.out.println("Metoda SilniaPiotrMakowiec.ObliczRekurencyjnie() rzuciła wyjątek.");
+                         System.out.println("Metoda SilniaPiotrMakowiec.ObliczIteracyjnie() rzuciła wyjątek.");
                          exceptionA = true;
                     }
                     try
                     {
-                        resultB = new BigInteger(TKrzywonosStrong.calculateStrong(n)+"");
+                        resultB = new BigInteger((long)TKrzywonosStrong.calculateStrong(n)+"");
                         System.out.println("Metoda TKrzywonosStrong.calculateStrong() zwróciła wynik " + resultB.toString() );
                     } catch (Exception ex) {
                         System.out.println("Metoda TKrzywonosStrong.calculateStrong() rzuciła wyjątek.");
