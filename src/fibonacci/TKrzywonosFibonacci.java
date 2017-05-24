@@ -1,4 +1,4 @@
-package sob_lab4;
+package fibonacci;
 
 public class TKrzywonosFibonacci {
 	
