@@ -12,9 +12,30 @@ public class Main {
 
                 public static void main(String[] args)
                 {
-                            testFibonacci(5);
+                            System.out.println("Wyniki obliczeń dla 8. wyrazu ciągu Fibonacciego:");
+                            testFibonacci(8);
+                            System.out.println("");
                             
-                            testSilnia(10000);
+                           System.out.println("Wyniki obliczeń dla 50. wyrazu ciągu Fibonacciego:");
+                            testFibonacci(50);
+                            System.out.println("");
+                            
+                            System.out.println("Wyniki obliczeń dla -2. wyrazu ciągu Fibonacciego:");
+                            testFibonacci(-2);
+                            System.out.println("");
+                            
+                            System.out.println("Wyniki obliczeń dla silni liczby 5:");
+                            testSilnia(5);
+                            System.out.println("");
+                            
+                            System.out.println("Wyniki obliczeń dla silni liczby 60:");
+                            testSilnia(60);
+                            System.out.println("");
+                            
+                            System.out.println("Wyniki obliczeń dla silni liczby -3:");
+                            testSilnia(-3);
+                            System.out.println("");
+
 
                 }
                 
@@ -51,17 +72,7 @@ public class Main {
                         System.out.println("Metoda FibonacciJeremiaszCzaja.fibonacci() rzuciła wyjątek.");
                         exceptionC = true;
                     }
-                    
-                    if (!exceptionA && !exceptionB && !exceptionC)
-                    {
-                            
-                    }
-                    else
-                    {
-                        System.out.println("Pojawiły się błędy przy obliczaniu wyracu ciągu Fibonacciego nr " + n + ".");
-                    }
-                    
-                    
+
                    if (!exceptionA && !exceptionB && !exceptionC)
                   {
                       if(resultA.equals(resultB))
@@ -87,6 +98,10 @@ public class Main {
                             }
                       }
                   }
+                   else
+                   {
+                       System.out.println("Pojawiły się błędy, nie można okreslić wyniku.");
+                   }
                     
                     
          }
@@ -145,6 +160,10 @@ public class Main {
                             }
                       }
                   }
+                  else
+                   {
+                       System.out.println("Pojawiły się błędy, nie można okreslić wyniku.");
+                   }
          }
                 
 
