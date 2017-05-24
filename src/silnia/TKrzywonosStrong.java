@@ -2,16 +2,13 @@ package silnia;
 
 public class TKrzywonosStrong {
 	
-	public static double calculateStrong(double value){
+	public static double calculateStrong(double value) throws Exception{
 		double result = 1;
 		//System.out.print("silnia dla wartosci " + value);
 		long startTime = System.nanoTime();
-		  try {
-			  if (value < 0) throw new Exception ("liczba jest mniejsza od zera");
-		  } catch (Exception e) {
-				e.printStackTrace();
-				System.exit(1);
-			}
+
+		if (value < 0) throw new Exception ("liczba jest mniejsza od zera");
+
 		if (value >= 0) {
 			while (value > 0) {
 				result *= value;

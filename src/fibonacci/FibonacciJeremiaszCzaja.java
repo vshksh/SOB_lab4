@@ -15,18 +15,25 @@ import java.math.BigInteger;
 public class FibonacciJeremiaszCzaja
 {
 
-    public static BigInteger fibonacci(int a)
+    public static BigInteger fibonacci(int a) throws Exception
     {
-        if (a == 0)
-                return new BigInteger("0");
+        if(a<0)
+        {
+            throw new Exception();
+        }
         else
         {
-                 if (a == 1)
-                return new BigInteger("1");
-                 else
-                 {
-                      return (fibonacci(a-1).add(fibonacci(a-2)));
-                 }
+            if (a == 0)
+                    return new BigInteger("0");
+            else
+            {
+                     if (a == 1)
+                    return new BigInteger("1");
+                     else
+                     {
+                          return (fibonacci(a-1).add(fibonacci(a-2)));
+                     }
+            }
         }
     }
 
